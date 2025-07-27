@@ -584,6 +584,78 @@
             display: block;
         }
 
+        /* 友情链接样式 */
+        .friends-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .friend-card {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(0, 122, 204, 0.05) 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .friend-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .friend-card:hover::before {
+            left: 100%;
+        }
+
+        .friend-card:hover {
+            transform: translateY(-2px) scale(1.02);
+            border-color: var(--accent-color);
+            box-shadow: 0 8px 25px rgba(0, 255, 136, 0.15);
+        }
+
+        .friend-icon {
+            font-size: 2.5rem;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--accent-color), var(--cursor-blue));
+            border-radius: 12px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+        }
+
+        .friend-info {
+            flex: 1;
+        }
+
+        .friend-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .friend-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
         /* 弹窗样式 */
         .modal-overlay {
             position: fixed;
@@ -1208,6 +1280,29 @@
                         <span class="social-icon">✉️</span>
                         <div class="card-title">邮件联系</div>
                         <div class="card-content">商务合作与交流</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span>🔗</span>
+                    <span>友情链接</span>
+                </h2>
+                <div class="friends-grid">
+                    <div class="friend-card" onclick="window.open('https://cursor-insider.com/', '_blank')">
+                        <div class="friend-icon">🚀</div>
+                        <div class="friend-info">
+                            <div class="friend-title">Cursor Insider</div>
+                            <div class="friend-desc">深入了解 Cursor 社交媒体动态</div>
+                        </div>
+                    </div>
+                    <div class="friend-card" onclick="window.open('https://marv1nnnnn.github.io', '_blank')">
+                        <div class="friend-icon">👨‍💻</div>
+                        <div class="friend-info">
+                            <div class="friend-title">Marvin</div>
+                            <div class="friend-desc">技术分享与创意交流</div>
+                        </div>
                     </div>
                 </div>
             </div>
