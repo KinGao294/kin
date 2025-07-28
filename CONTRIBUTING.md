@@ -5,7 +5,7 @@
 ## 🎯 如何贡献
 
 ### 📝 报告问题
-- 在 [Issues](https://github.com/KinGao294/kin-/issues) 页面创建新问题
+- 在 [Issues](https://github.com/KinGao294/kin/issues) 页面创建新问题
 - 详细描述问题，包括：
   - 浏览器版本和操作系统
   - 复现步骤
@@ -21,8 +21,8 @@
 
 1. **Fork 项目**
    ```bash
-   git clone https://github.com/KinGao294/kin-.git
-   cd kin-
+   git clone https://github.com/KinGao294/kin.git
+   cd kin
    ```
 
 2. **创建功能分支**
@@ -114,7 +114,7 @@
 
 如有疑问，可以通过以下方式联系：
 
-- **GitHub Issues**: [创建问题](https://github.com/KinGao294/kin-/issues)
+- **GitHub Issues**: [创建问题](https://github.com/KinGao294/kin/issues)
 - **邮件**: gaokin294@gmail.com
 - **即刻**: @北国桑麻
 

@@ -1,14 +1,14 @@
-# 用 Video Coding 打造个人网页
+# 用 Video Coding 打造你自己的个人网页
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/KinGao294/kin-.svg)](https://github.com/KinGao294/kin-/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/KinGao294/kin-.svg)](https://github.com/KinGao294/kin-/issues)
-[![GitHub forks](https://img.shields.io/github/forks/KinGao294/kin-.svg)](https://github.com/KinGao294/kin-/network)
+[![GitHub stars](https://img.shields.io/github/stars/KinGao294/kin.svg)](https://github.com/KinGao294/kin/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/KinGao294/kin.svg)](https://github.com/KinGao294/kin/issues)
+[![GitHub forks](https://img.shields.io/github/forks/KinGao294/kin.svg)](https://github.com/KinGao294/kin/network)
 [![Built with Cursor](https://img.shields.io/badge/Built%20with-Cursor-007ACC?logo=visual-studio-code&logoColor=white)](https://cursor.sh/)
 
-> **用 Cursor 实现 Video Coding 理念的沉浸式个人网页** - 集粒子动画、代码雨、打字机效果、BGM于一体的创意展示
+> **用 Cursor 实现 Video Coding 理念打造你自己的沉浸式个人网页** - 集粒子动画、代码雨、打字机效果、BGM于一体的创意展示
 
-[🌟 在线演示](https://kingao294.github.io/kin-) | [📖 使用指南](#-使用方法) | [🤝 贡献代码](CONTRIBUTING.md)
+[🌟 在线演示](https://kingao294.github.io/kin) | [📖 使用指南](#-使用方法) | [🤝 贡献代码](CONTRIBUTING.md)
 
 ## 🎬 设计理念
 
@@ -243,16 +243,16 @@ const kin = {
 1. **下载 Cursor**：访问 [cursor.sh](https://cursor.sh/) 下载 AI 编程工具
 2. **克隆项目到 Cursor**：
 ```bash
-git clone https://github.com/KinGao294/kin-.git
-cd kin-
+git clone https://github.com/KinGao294/kin.git
+cd kin
 cursor .  # 用 Cursor 打开项目
 ```
 
 ### 本地运行
 ```bash
 # 克隆项目
-git clone https://github.com/KinGao294/kin-.git
-cd kin-
+git clone https://github.com/KinGao294/kin.git
+cd kin
 
 # 使用本地服务器运行（推荐）
 python -m http.server 8000
@@ -270,11 +270,11 @@ npx serve .
 - 📱 优化响应式设计
 
 ### 🌐 在线访问
-**GitHub Pages 部署地址**：[https://kingao294.github.io/kin-](https://kingao294.github.io/kin-)
+**GitHub Pages 部署地址**：[https://kingao294.github.io/kin](https://kingao294.github.io/kin)
 
 ### 一键部署
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/KinGao294/kin-)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/KinGao294/kin-)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/KinGao294/kin)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/KinGao294/kin)
 
 ### 🚀 GitHub Pages 部署
 本项目已配置 GitHub Actions 自动部署。每次推送到 `main` 分支时都会自动更新网站。
