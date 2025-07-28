@@ -957,6 +957,34 @@
             margin-left: 2px;
         }
 
+        /* 跳过按钮样式 */
+        .skip-button {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 1rem auto 2rem;
+            font-family: 'Inter', sans-serif;
+            backdrop-filter: blur(10px);
+            animation: buttonSlideIn 1s ease-out 2s both;
+        }
+
+        .skip-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .skip-button:active {
+            transform: translateY(0);
+        }
+
         .start-footer {
             animation: textSlideIn 1s ease-out 2s both;
         }
@@ -1136,6 +1164,11 @@
                 <div class="button-ripple"></div>
             </button>
             
+            <!-- 跳过按钮（仅对回访用户显示） -->
+            <button class="skip-button" id="skipButton" style="display: none;">
+                <span>直接进入 →</span>
+            </button>
+            
             <div class="start-footer">
                 <div class="tech-badge">Powered by AI & Creativity</div>
             </div>
@@ -1255,7 +1288,7 @@
                             <div class="card-content">我们想把 video coding 打造成一种生活方式，像下班去打黑客松就像下班看电影一样简单</div>
                         </div>
                     </li>
-                    <li class="achievement-item" onclick="window.open('#', '_blank')">
+                    <li class="achievement-item" onclick="window.open('https://pf2n1japaz.feishu.cn/wiki/M0JCwjXgriRK9sk5NoLcvM5Lnah?from=from_copylink', '_blank')">
                         <div class="achievement-icon">🏢</div>
                         <div class="achievement-content">
                             <div class="card-title">企业 AI 培训讲师</div>
@@ -1268,7 +1301,7 @@
             <div class="section">
                 <h2 class="section-title">
                     <span>📱</span>
-                    <span>联系方式</span>
+                    <span>Kin 的联系方式</span>
                 </h2>
                 <div class="social-grid">
                     <div class="social-card" onclick="showJikeModal()">
@@ -1287,7 +1320,7 @@
             <div class="section">
                 <h2 class="section-title">
                     <span>🔗</span>
-                    <span>友情链接</span>
+                    <span>友情链接（社区另外两个发起人的网站）</span>
                 </h2>
                 <div class="friends-grid">
                     <div class="friend-card" onclick="window.open('https://cursor-insider.com/', '_blank')">
@@ -1367,6 +1400,15 @@
             initStartScreen() {
                 this.startScreen = document.getElementById('startScreen');
                 this.playButton = document.getElementById('playButton');
+                this.skipButton = document.getElementById('skipButton');
+                
+                // 检查是否是首次访问
+                this.isFirstVisit = !localStorage.getItem('kin-site-visited');
+                
+                // 如果不是首次访问，显示跳过按钮
+                if (!this.isFirstVisit) {
+                    this.skipButton.style.display = 'block';
+                }
                 
                 // 初始化粒子效果
                 this.initParticles();
@@ -1374,6 +1416,13 @@
                 this.playButton.addEventListener('click', () => {
                     this.playClickSound();
                     this.startExperience();
+                    // 记录用户已访问
+                    localStorage.setItem('kin-site-visited', 'true');
+                });
+                
+                this.skipButton.addEventListener('click', () => {
+                    this.playClickSound();
+                    this.skipToFullPage();
                 });
             }
             
@@ -1483,6 +1532,23 @@
                 setTimeout(() => {
                     this.startAnimation();
                 }, 800);
+            }
+
+            // 跳过动画直接进入完整页面
+            skipToFullPage() {
+                // 隐藏启动页面
+                this.startScreen.classList.add('hidden');
+                
+                // 显示音频控制
+                this.audioControl.classList.add('visible');
+                
+                // 初始化并播放BGM
+                this.initBGM();
+                
+                // 直接显示完整介绍页面
+                setTimeout(() => {
+                    this.showFullPage();
+                }, 500);
             }
 
             // 初始化BGM
@@ -1854,6 +1920,10 @@
 
             showFullPage() {
                 this.fullPage.classList.add('show');
+                // 记录用户已访问（如果还没记录的话）
+                if (!localStorage.getItem('kin-site-visited')) {
+                    localStorage.setItem('kin-site-visited', 'true');
+                }
             }
 
             hideFullPage() {

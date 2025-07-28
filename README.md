@@ -1,5 +1,14 @@
 # Kin 个人网页 - Cursor Meetup版
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/KinGao294/kin-.svg)](https://github.com/KinGao294/kin-/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/KinGao294/kin-.svg)](https://github.com/KinGao294/kin-/issues)
+[![GitHub forks](https://img.shields.io/github/forks/KinGao294/kin-.svg)](https://github.com/KinGao294/kin-/network)
+
+> **沉浸式个人网页** - 集粒子动画、代码雨、打字机效果、BGM于一体的创意展示
+
+[🌟 在线演示](https://kingao294.github.io/kin-) | [📖 使用指南](#-使用方法) | [🤝 贡献代码](CONTRIBUTING.md)
+
 ## 🎬 设计理念
 
 创造极致沉浸的体验流程：高级启动页面（粒子动画+分层动效）→ 4:6黄金比例布局 → 持续滚动代码展示 → 文字框逐行滚动 → 背景代码雨效果，从视觉冲击到永不停歇的动态编程体验。
@@ -215,4 +224,51 @@ const kin = {
 - 🎛️ **音频控制按钮**：右下角音频状态显示和手动控制
 - 🔊 **智能播放策略**：自动播放+用户交互备用方案
 - 🚀 **速度优化**：1.1倍播放速度，更流畅的演示节奏
-- 📱 **交互增强**：键盘支持、点击外部关闭等现代交互 
+- 📱 **交互增强**：键盘支持、点击外部关闭等现代交互
+
+## 🚀 快速开始
+
+### 本地运行
+```bash
+# 克隆项目
+git clone https://github.com/KinGao294/kin-.git
+cd kin-
+
+# 使用本地服务器运行（推荐）
+python -m http.server 8000
+# 或者
+npx serve .
+
+# 访问 http://localhost:8000
+```
+
+### 一键部署
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/KinGao294/kin-)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/KinGao294/kin-)
+
+## 📄 许可证
+
+本项目基于 [MIT 许可证](LICENSE) 开源。
+
+## 🤝 贡献
+
+欢迎所有形式的贡献！请查看 [贡献指南](CONTRIBUTING.md) 了解详情。
+
+### 贡献者
+感谢所有为这个项目贡献的开发者！
+
+## 🌟 Star History
+
+如果这个项目对您有帮助，请点个 ⭐ 支持一下！
+
+[![Star History Chart](https://api.star-history.com/svg?repos=KinGao294/kin-&type=Timeline)](https://star-history.com/#KinGao294/kin-&Timeline)
+
+## 📞 联系方式
+
+- **GitHub**: [@KinGao294](https://github.com/KinGao294)
+- **邮件**: gaokin294@gmail.com
+- **即刻**: @北国桑麻
+
+---
+
+**如果您喜欢这个项目，请给个 ⭐ 支持一下！** 🚀✨ 
