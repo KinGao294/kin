@@ -1,4 +1,4 @@
-# 用 Video Coding 打造你自己的个人网页
+# 用 Vide Coding 打造你自己的个人网页
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/KinGao294/kin.svg)](https://github.com/KinGao294/kin/stargazers)
@@ -6,17 +6,24 @@
 [![GitHub forks](https://img.shields.io/github/forks/KinGao294/kin.svg)](https://github.com/KinGao294/kin/network)
 [![Built with Cursor](https://img.shields.io/badge/Built%20with-Cursor-007ACC?logo=visual-studio-code&logoColor=white)](https://cursor.sh/)
 
-> **用 Cursor 实现 Video Coding 理念打造你自己的沉浸式个人网页** - 集粒子动画、代码雨、打字机效果、BGM于一体的创意展示
+> **用 Cursor 实现 Vide Coding 理念打造你自己的沉浸式个人网页** - 集粒子动画、代码雨、打字机效果、BGM于一体的创意展示
 
 [🌟 在线演示](https://kingao294.github.io/kin) | [📖 使用指南](#-使用方法) | [🤝 贡献代码](CONTRIBUTING.md)
 
 ## 🎬 设计理念
 
-**Video Coding** - 让编程过程成为一种生活方式！
+**Vide Coding** - 让人人都能打造属于自己的个性化网站！
 
-使用 **Cursor AI 编程工具**创造极致沉浸的体验流程：高级启动页面（粒子动画+分层动效）→ 4:6黄金比例布局 → 持续滚动代码展示 → 文字框逐行滚动 → 背景代码雨效果，从视觉冲击到永不停歇的动态编程体验。
+通过 **Cursor AI 编程工具**，任何人都可以使用 **Vide Coding** 理念创造属于自己的沉浸式个人网页：
 
-> 正如我们在全球最短一小时黑客松中提出的理念：**让 Video Coding 成为一种生活方式，就像下班去看电影一样简单自然。**
+🎯 **个性化定制**：完全可定制的代码结构，展示你独特的个人信息  
+🏆 **能力展示**：通过代码形式生动展现你的专业技能和核心优势  
+📂 **作品集呈现**：可点击跳转的成就列表，完美展示你的项目和作品  
+🎨 **视觉体验**：粒子动画+代码雨+打字机效果，让个人介绍变成艺术品
+
+**技术流程**：高级启动页面（粒子动画+分层动效）→ 4:6黄金比例布局 → 持续滚动代码展示 → 文字框逐行滚动 → 背景代码雨效果，从视觉冲击到永不停歇的动态编程体验。
+
+> **Vide Coding 让每个人都能用代码讲述自己的故事，打造专属的数字名片！**
 
 ### 核心特色
 - **🎵 高级启动页面**：粒子动画+分层动效+旋转Logo，用户主动触发确保BGM完美播放
@@ -143,7 +150,7 @@ const kin = {
 - **Cursor AI 编程**：使用 Cursor 的 AI 辅助功能快速开发
 - **智能代码补全**：Cursor 的自动补全和代码建议
 - **AI 代码生成**：通过 Cursor 的 AI 助手快速实现复杂功能
-- **Video Coding 实践**：将编程过程可视化，体现 Video Coding 理念
+- **Vide Coding 实践**：将编程过程可视化，体现 Vide Coding 理念
 
 ### 前端技术
 - **打字机算法**：逐字符显示的真实打字效果
@@ -262,7 +269,7 @@ npx serve .
 # 访问 http://localhost:8000
 ```
 
-### 💡 学习 Video Coding
+### 💡 学习 Vide Coding
 使用 Cursor 的 AI 助手功能，您可以：
 - 🤖 询问代码实现原理
 - 🎨 修改动画效果和样式
