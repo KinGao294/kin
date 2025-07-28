@@ -269,9 +269,15 @@ npx serve .
 - 🎵 调整音频和交互功能
 - 📱 优化响应式设计
 
+### 🌐 在线访问
+**GitHub Pages 部署地址**：[https://kingao294.github.io/kin-](https://kingao294.github.io/kin-)
+
 ### 一键部署
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/KinGao294/kin-)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/KinGao294/kin-)
+
+### 🚀 GitHub Pages 部署
+本项目已配置 GitHub Actions 自动部署。每次推送到 `main` 分支时都会自动更新网站。
 
 ## 📄 许可证
 
