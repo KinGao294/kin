@@ -1,17 +1,22 @@
-# Kin 个人网页 - Cursor Meetup版
+# 用 Video Coding 打造个人网页
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/KinGao294/kin-.svg)](https://github.com/KinGao294/kin-/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/KinGao294/kin-.svg)](https://github.com/KinGao294/kin-/issues)
 [![GitHub forks](https://img.shields.io/github/forks/KinGao294/kin-.svg)](https://github.com/KinGao294/kin-/network)
+[![Built with Cursor](https://img.shields.io/badge/Built%20with-Cursor-007ACC?logo=visual-studio-code&logoColor=white)](https://cursor.sh/)
 
-> **沉浸式个人网页** - 集粒子动画、代码雨、打字机效果、BGM于一体的创意展示
+> **用 Cursor 实现 Video Coding 理念的沉浸式个人网页** - 集粒子动画、代码雨、打字机效果、BGM于一体的创意展示
 
 [🌟 在线演示](https://kingao294.github.io/kin-) | [📖 使用指南](#-使用方法) | [🤝 贡献代码](CONTRIBUTING.md)
 
 ## 🎬 设计理念
 
-创造极致沉浸的体验流程：高级启动页面（粒子动画+分层动效）→ 4:6黄金比例布局 → 持续滚动代码展示 → 文字框逐行滚动 → 背景代码雨效果，从视觉冲击到永不停歇的动态编程体验。
+**Video Coding** - 让编程过程成为一种生活方式！
+
+使用 **Cursor AI 编程工具**创造极致沉浸的体验流程：高级启动页面（粒子动画+分层动效）→ 4:6黄金比例布局 → 持续滚动代码展示 → 文字框逐行滚动 → 背景代码雨效果，从视觉冲击到永不停歇的动态编程体验。
+
+> 正如我们在全球最短一小时黑客松中提出的理念：**让 Video Coding 成为一种生活方式，就像下班去看电影一样简单自然。**
 
 ### 核心特色
 - **🎵 高级启动页面**：粒子动画+分层动效+旋转Logo，用户主动触发确保BGM完美播放
@@ -134,6 +139,12 @@ const kin = {
 
 ## 🛠 技术特性
 
+### 🎯 开发工具
+- **Cursor AI 编程**：使用 Cursor 的 AI 辅助功能快速开发
+- **智能代码补全**：Cursor 的自动补全和代码建议
+- **AI 代码生成**：通过 Cursor 的 AI 助手快速实现复杂功能
+- **Video Coding 实践**：将编程过程可视化，体现 Video Coding 理念
+
 ### 前端技术
 - **打字机算法**：逐字符显示的真实打字效果
 - **文字逐字显示**：每行文字的逐字符打字动画
@@ -228,6 +239,15 @@ const kin = {
 
 ## 🚀 快速开始
 
+### 🎯 推荐：使用 Cursor 开发
+1. **下载 Cursor**：访问 [cursor.sh](https://cursor.sh/) 下载 AI 编程工具
+2. **克隆项目到 Cursor**：
+```bash
+git clone https://github.com/KinGao294/kin-.git
+cd kin-
+cursor .  # 用 Cursor 打开项目
+```
+
 ### 本地运行
 ```bash
 # 克隆项目
@@ -241,6 +261,13 @@ npx serve .
 
 # 访问 http://localhost:8000
 ```
+
+### 💡 学习 Video Coding
+使用 Cursor 的 AI 助手功能，您可以：
+- 🤖 询问代码实现原理
+- 🎨 修改动画效果和样式
+- 🎵 调整音频和交互功能
+- 📱 优化响应式设计
 
 ### 一键部署
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/KinGao294/kin-)
